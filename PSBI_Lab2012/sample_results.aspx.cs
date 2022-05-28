@@ -39,7 +39,7 @@ namespace PSBI_Lab2012
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            //cmdSave.OnClientClick = "return ValidateForm();";
+            cmdSave.OnClientClick = "return ValidateForm();";
 
             if (Session["userid"] == null)
             {
@@ -4863,7 +4863,7 @@ dt_entry.ToShortDateString()
                     ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
                     UR_08_a.Focus();
                     return false;
-                }                
+                }
                 else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'UR_10_a'", UR_10_a.Text) == true)
                 {
                     string message = "alert('Invalid value');";
@@ -5199,12 +5199,238 @@ dt_entry.ToShortDateString()
                     ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
                     uc_37a_a.Focus();
                     return false;
-                }                
-                
-
-
-
-
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_20a_a'", LA_20a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_20a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_21a_a'", LA_21a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_21a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_22a_a'", LA_22a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_22a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_23a_a'", LA_23a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_23a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_24a_a'", LA_24a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_24a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_25a_a'", LA_25a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_25a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_26a_a'", LA_26a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_26a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_27a_a'", LA_27a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_27a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_28a_a'", LA_28a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_28a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_29a_a'", LA_29a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_29a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_30a_a'", LA_30a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_30a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_31a_a'", LA_31a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_31a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_32a_a'", LA_32a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_32a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_33a_a'", LA_33a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_33a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_34a_a'", LA_34a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_34a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_35a_a'", LA_35a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_35a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_36a_a'", LA_36a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_36a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_37a_a'", LA_37a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_37a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_38a_a'", LA_38a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_38a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_39a_a'", LA_39a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_39a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_40a_a'", LA_40a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_40a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_41a_a'", LA_41a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_41a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_42a_a'", LA_42a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_42a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_43a_a'", LA_43a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_43a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_44a_a'", LA_44a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_44a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_45a_a'", LA_45a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_45a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_46a_a'", LA_46a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_46a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_47a_a'", LA_47a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_47a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_48a_a'", LA_48a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_48a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_49a_a'", LA_49a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_49a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_50a_a'", LA_50a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_50a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_51a_a'", LA_51a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_51a_a.Focus();
+                    return false;
+                }
+                else if (obj_op.Validate_Dictionary("0", "sp_ValidateDictionary", " where tabname = 'sample_resu' and var_id = 'LA_52a_a'", LA_52a_a.Text) == true)
+                {
+                    string message = "alert('Invalid value');";
+                    ScriptManager.RegisterClientScriptBlock((sender as Control), this.GetType(), "alert", message, true);
+                    LA_52a_a.Focus();
+                    return false;
+                }
 
             }
             catch (Exception ex)
