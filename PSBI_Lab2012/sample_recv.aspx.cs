@@ -1024,7 +1024,8 @@ namespace PSBI_Lab2012
 "AS3_B1",
 "AS3_B2",
 "UserID",
-"EntryDate"
+"EntryDate",
+"labid"
  };
 
 
@@ -1118,7 +1119,8 @@ dt_AS3_A2.ToShortDateString(),
 AS3_B1.Text,
 dt_AS3_B2.ToShortDateString(),
 Session["userid"].ToString(),
-dt_entry.ToShortDateString()
+dt_entry.ToShortDateString(),
+HttpContext.Current.Request["labid"].ToString()
 
                 };
 

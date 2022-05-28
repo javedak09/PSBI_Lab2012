@@ -860,6 +860,17 @@
 
         });
 
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
 
         $(document).on("blur", "#AS1_screening_ID", function (e) {
 
@@ -872,7 +883,7 @@
                         type: "POST",
                         contentType: "application/json; charset=utf-8",
                         dataType: "json",
-                        data: "{ screeningid: '" + $('#AS1_screening_ID').val() + "'}",
+                        data: "{ screeningid: '" + $('#AS1_screening_ID').val() + "', labid: '" + getCookie("labid") + "'}",
 
                         success: function (data) {
 
@@ -2663,14 +2674,14 @@
                                                                     <script type="text/javascript">
                                                                         $(document).ready(function () {
                                                                             $('#<%=AS3_A2.ClientID%>').datepicker({
-                                                                            minDate: -100,
-                                                                            maxDate: "+0D",
-                                                                            dateFormat: 'dd/mm/yy',
-                                                                            focusOn: 'button',
-                                                                            onSelect: function () { },
-                                                                            onClose: function () { $(this).focus(); }
+                                                                                minDate: -100,
+                                                                                maxDate: "+0D",
+                                                                                dateFormat: 'dd/mm/yy',
+                                                                                focusOn: 'button',
+                                                                                onSelect: function () { },
+                                                                                onClose: function () { $(this).focus(); }
+                                                                            });
                                                                         });
-                                                                    });
                                                                     </script>
                                                                 </div>
                                                             </div>
@@ -2693,14 +2704,14 @@
                                                                     <script type="text/javascript">
                                                                         $(document).ready(function () {
                                                                             $('#<%=AS3_B2.ClientID%>').datepicker({
-                                                                            minDate: -100,
-                                                                            maxDate: "+0D",
-                                                                            dateFormat: 'dd/mm/yy',
-                                                                            focusOn: 'button',
-                                                                            onSelect: function () { },
-                                                                            onClose: function () { $(this).focus(); }
+                                                                                minDate: -100,
+                                                                                maxDate: "+0D",
+                                                                                dateFormat: 'dd/mm/yy',
+                                                                                focusOn: 'button',
+                                                                                onSelect: function () { },
+                                                                                onClose: function () { $(this).focus(); }
+                                                                            });
                                                                         });
-                                                                    });
                                                                     </script>
                                                                 </div>
                                                             </div>

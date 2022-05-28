@@ -3975,7 +3975,8 @@ namespace PSBI_Lab2012
 "LA_52a_a",
 "LA_52b_a",
 "UserID",
-"EntryDate"
+"EntryDate",
+"labid"
 };
 
                 string[] fldvalue = {
@@ -4312,7 +4313,8 @@ var_LA_52a_b,
 LA_52a_a.Text,
 var_LA_52b_a,
 Session["userid"].ToString(),
-dt_entry.ToShortDateString()
+dt_entry.ToShortDateString(),
+HttpContext.Current.Request["labid"].ToString()
 
 };
 
@@ -4352,14 +4354,14 @@ dt_entry.ToShortDateString()
 
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public static List<CountryInfo> CheckScreeningID(string screeningid)
+        public static List<CountryInfo> CheckScreeningID(string screeningid, string labid)
         {
             List<CountryInfo> CountryInformation = new List<CountryInfo>();
 
             try
             {
                 string[] fldname = { "screeningid", "fldvalue", "visitid" };
-                string[] fldvalue = { screeningid, "0", "0" };
+                string[] fldvalue = { screeningid, "0", labid };
 
                 DataSet ds = ExecuteNonQuery(fldname, fldvalue, "sp_GetRecords");
 
@@ -4404,14 +4406,14 @@ dt_entry.ToShortDateString()
 
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public static List<SampleResults> IsScreeningIDExists(string screeningid)
+        public static List<SampleResults> IsScreeningIDExists(string screeningid, string labid)
         {
             List<SampleResults> CountryInformation = new List<SampleResults>();
 
             try
             {
                 string[] fldname = { "screeningid", "fldvalue", "visitid" };
-                string[] fldvalue = { screeningid, "1", "0" };
+                string[] fldvalue = { screeningid, "1", labid };
 
                 DataSet ds = ExecuteNonQuery(fldname, fldvalue, "sp_GetRecords");
 
