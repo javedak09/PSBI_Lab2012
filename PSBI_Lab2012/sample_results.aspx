@@ -5381,6 +5381,12 @@
 
     </script>
 
+    <style>
+        .lblerr{            
+            color: #FF0000;
+        }        
+    </style>
+
 </head>
 <body class="vertical-layout vertical-menu 2-columns fixed-navbar" data-open="click" data-menu="vertical-menu" data-color="bg-blue" data-col="2-columns">
     <form id="form1" name="form1" runat="server" autocomplete="off" enctype="multipart/form-data">

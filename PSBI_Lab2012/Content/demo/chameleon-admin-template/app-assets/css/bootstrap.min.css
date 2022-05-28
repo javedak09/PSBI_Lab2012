@@ -42,6 +42,11 @@ dd, label {
     margin-bottom: .5rem;
 }
 
+.lblerr {
+    color: #FF0000;
+}
+
+
 .label_heading {
     margin-bottom: .5rem;
     font-size: 12pt;
