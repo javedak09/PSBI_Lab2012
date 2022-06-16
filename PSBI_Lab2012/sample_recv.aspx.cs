@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
+using System.Linq;
 using System.Web;
-using System.Web.Script.Services;
-using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.SqlClient;
+using System.Web.Script.Services;
+using System.Web.Services;
+
 
 namespace PSBI_Lab2012
 {
@@ -166,7 +168,7 @@ namespace PSBI_Lab2012
 
                     pnl_AS2_Q12_1.Visible = false;
 
-                    DisableControls(AS2_Q12_1);
+                    //DisableControls(AS2_Q12_1);
                     DisableControls(AS2_Q12_2);
                     DisableControls(AS2_Q12_3);
 
@@ -706,7 +708,7 @@ namespace PSBI_Lab2012
                 {
                     var_AS5_Q30 = "2";
                 }
-                else if (AS5_Q30_2.Checked == true)
+                else if (AS5_Q30_3.Checked == true)
                 {
                     var_AS5_Q30 = "3";
                 }
